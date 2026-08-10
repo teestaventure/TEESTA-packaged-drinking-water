@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teesta Water Issue</title>
+    <title>TEESTA - Packaged Drinking Water</title>
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -16,53 +20,121 @@
         header {
             background-color: #005f73;
             color: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #0a9396;
+            color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 4rem 1rem;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
         section {
             background: #fff;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         h2 {
             color: #005f73;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
         }
         footer {
             text-align: center;
-            padding: 1rem;
-            background-color: #0a9396;
+            padding: 1.5rem;
+            background-color: #005f73;
             color: white;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Teesta River Water Dispute</h1>
-        <p>An overview of the transboundary water sharing challenges between India and Bangladesh.</p>
-    </header>
-    <main>
-        <section>
-            <h2>Background</h2>
-            <p>The Teesta River originates in the Himalayas and flows through Sikkim and West Bengal in India before entering Bangladesh. It is a vital water source for agriculture and livelihoods in both regions.</p>
-        </section>
-        <section>
-            <h2>Key Issues</h2>
+        <nav>
+            <div class="logo">TEESTA</div>
             <ul>
-                <li><strong>Water Allocation:</strong> Needs during the lean dry season (December to May) often exceed supply.</li>
-                <li><strong>Agricultural Impact:</strong> Millions of farmers rely on the river for irrigation on both sides of the border.</li>
-                <li><strong>Hydropower & Dams:</strong> Upstream dams and barrages significantly affect downstream water flow.</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#water">Our Water</a></li>
+                <li><a href="#why-teesta">Why Teesta</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Pure Refreshment from Nature</h1>
+        <p>Premium Packaged Drinking Water Delivered Fresh</p>
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Teesta Venture, we are dedicated to providing pure, clean, and safe drinking water. Our brand stands for uncompromising quality and commitment to hydration excellence for everyday life.</p>
+        </section>
+
+        <section id="water">
+            <h2>Our Water</h2>
+            <p>Every drop of Teesta Packaged Drinking Water undergoes a rigorous multi-stage purification process, including reverse osmosis and UV treatment, ensuring top purity levels and a refreshing taste in every bottle.</p>
+        </section>
+
+        <section id="why-teesta">
+            <h2>Why Teesta</h2>
+            <ul>
+                <li><strong>Advanced Purification:</strong> Processed through state-of-the-art filtration technologies.</li>
+                <li><strong>Mineral Balance:</strong> Enriched with essential minerals for optimal hydration.</li>
+                <li><strong>Eco-Conscious Packaging:</strong> Bottled using high-grade, recyclable materials.</li>
             </ul>
         </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need to place a bulk order? Reach out to us!</p>
+            <p><strong>Email:</strong> info@teestaventure.com</p>
+            <p><strong>Phone:</strong> +91 12345 67890</p>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; Teesta Water Information Portal</p>
+        <p>&copy; 2026 Teesta Venture. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
